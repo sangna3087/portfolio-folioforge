@@ -25,13 +25,6 @@ const projects = [
     stack: ['Python', 'LangChain', 'Streamlit'],
     href: 'https://github.com/sangna3087/Datheon_Python_Generative_AI_LangChain_Internship',
   },
-  {
-    number: '02',
-    title: 'Personal Developer Portfolio',
-    description: 'A responsive, typography-led portfolio for sharing selected work, curious experiments, and the person behind the code.',
-    stack: ['React', 'Vite', 'Tailwind CSS'],
-    href: 'https://github.com/sangna3087',
-  },
 ]
 
 export default function Page() {
@@ -50,12 +43,29 @@ export default function Page() {
         <a href="#contact" className="rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.16em] text-white/70 transition hover:border-[#b38cff]/60 hover:text-[#b38cff]">Let&apos;s talk</a>
       </nav>
 
-      <section id="top" className="relative z-10 mx-auto flex min-h-[680px] max-w-6xl flex-col justify-center px-6 pb-28 pt-20 lg:px-8">
-        <div className="mb-8 flex items-center gap-3 text-xs uppercase tracking-[0.22em] text-[#b38cff]"><span className="h-px w-10 bg-[#b38cff]" /> Available for interesting problems</div>
-        <h1 className="max-w-5xl text-[clamp(3.8rem,10vw,9.5rem)] font-semibold leading-[0.86] tracking-[-0.075em]">Building useful<br /><span className="text-white/35">things with</span> intent.</h1>
-        <div className="mt-12 flex flex-col justify-between gap-8 border-t border-white/10 pt-7 md:flex-row md:items-end">
-          <p className="max-w-md text-lg leading-relaxed text-white/55">I&apos;m <strong className="font-medium text-white">Sangna Acharya BM</strong> — a B.Tech CSE student at MSRUAS exploring AI/ML, thoughtful interfaces, and the space between an idea and its shipped version.</p>
-          <div className="flex shrink-0 gap-3"><a href="#work" className="group inline-flex items-center gap-3 rounded-full bg-[#b38cff] px-5 py-3 text-sm font-medium text-[#f5f1ff] transition hover:bg-white">View projects <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" /></a><a href="#contact" className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 text-sm text-white/75 transition hover:border-white/50 hover:text-white">Get in touch</a></div>
+      <section id="top" className="relative z-10 mx-auto grid min-h-[680px] max-w-6xl items-center gap-14 px-6 pb-24 pt-20 lg:grid-cols-[1.15fr_0.85fr] lg:px-8">
+        <div>
+          <div className="mb-8 flex items-center gap-3 text-xs uppercase tracking-[0.22em] text-[#b38cff]"><span className="h-px w-10 bg-[#b38cff]" /> Available for interesting problems</div>
+          <p className="mb-5 font-mono text-sm text-white/45">Sangna Acharya BM</p>
+          <h1 className="max-w-4xl text-[clamp(3.7rem,8vw,8.5rem)] font-semibold leading-[0.86] tracking-[-0.075em]">Building useful<br /><span className="text-white/35">things with</span> intent.</h1>
+          <p className="mt-8 max-w-xl text-lg leading-relaxed text-white/55">B.Tech CSE Student at MSRUAS <span className="text-[#b38cff]">|</span> AI/ML &amp; Web Development Enthusiast</p>
+          <div className="mt-10 flex flex-wrap gap-3"><a href="#work" className="group inline-flex items-center gap-3 rounded-full bg-[#b38cff] px-5 py-3 text-sm font-medium text-[#f5f1ff] transition hover:bg-white hover:text-[#160d24]">View Projects <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" /></a><a href="#contact" className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 text-sm text-white/75 transition hover:border-[#b38cff]/70 hover:text-[#b38cff]">Get in Touch</a></div>
+        </div>
+        <div className="relative mx-auto w-full max-w-sm">
+          <div className="absolute -inset-5 rounded-[2rem] bg-[#8e5cff]/15 blur-3xl" />
+          <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-[#b38cff]/35 bg-[#171126]/80 p-5 shadow-[0_0_60px_rgba(142,92,255,0.16)] backdrop-blur-xl">
+            <div className="absolute inset-5 rounded-[1.5rem] border border-white/10" />
+            <div className="relative flex h-full flex-col items-center justify-center">
+              <div className="relative mt-8 size-44 rounded-full border border-[#b38cff]/50 bg-gradient-to-br from-[#d4b8ff] via-[#9870d9] to-[#42236e] shadow-[0_0_45px_rgba(179,140,255,0.35)]">
+                <div className="absolute left-1/2 top-8 size-24 -translate-x-1/2 rounded-full bg-[#f2c3ad] shadow-inner" />
+                <div className="absolute left-1/2 top-4 size-28 -translate-x-1/2 rounded-[50%_50%_42%_42%] bg-[#251536]" />
+                <div className="absolute left-[calc(50%-29px)] top-[73px] size-2 rounded-full bg-[#24132e]" /><div className="absolute right-[calc(50%-29px)] top-[73px] size-2 rounded-full bg-[#24132e]" />
+                <div className="absolute bottom-[53px] left-1/2 h-2 w-8 -translate-x-1/2 rounded-full border-b-2 border-[#9a4d63]" />
+                <div className="absolute bottom-0 left-1/2 h-20 w-32 -translate-x-1/2 rounded-t-[4rem] bg-[#5e3b9b]" />
+              </div>
+              <div className="mt-12 text-center"><p className="font-mono text-xs uppercase tracking-[0.22em] text-[#b38cff]">Creative technologist</p><p className="mt-3 text-sm text-white/45">AI, interfaces &amp; classical Indian dance</p></div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -72,7 +82,7 @@ export default function Page() {
 
       <section className="relative z-10 mx-auto max-w-6xl px-6 py-24 lg:px-8"><div className="grid gap-12 md:grid-cols-[1fr_1.4fr]"><div><p className="mb-5 font-mono text-xs text-[#b38cff]">04 / MILESTONES</p><h2 className="text-4xl font-medium tracking-[-0.04em] md:text-5xl">A few signals<br />of momentum.</h2></div><div className="divide-y divide-white/10 border-y border-white/10">{[['Google Student Ambassador', 'Selected for Semester 2 · MSRUAS · Nov 2026'], ['Academic standing', '9.28 overall CGPA · 1st year'], ['Registration number', '25ETCS002269']].map(([title, sub]) => <div key={title} className="flex flex-col gap-2 py-6 sm:flex-row sm:items-center sm:justify-between"><span className="text-lg text-white/80">{title}</span><span className="font-mono text-xs text-white/40 sm:text-right">{sub}</span></div>)}</div></div></section>
 
-      <section id="contact" className="relative z-10 border-t border-white/10 bg-[#b38cff] text-[#f5f1ff]"><div className="mx-auto max-w-6xl px-6 py-24 lg:px-8"><p className="mb-7 font-mono text-xs uppercase tracking-[0.2em] text-[#f5f1ff]/60">05 / CONTACT</p><div className="flex flex-col justify-between gap-12 md:flex-row md:items-end"><h2 className="max-w-2xl text-5xl font-semibold leading-[0.92] tracking-[-0.06em] md:text-7xl">Have a good problem?<br />Let&apos;s make it real.</h2><div className="flex flex-col gap-4 text-sm"><a className="inline-flex items-center gap-3 border-b border-[#f5f1ff]/25 pb-2 transition hover:border-[#f5f1ff]" href="mailto:sangna3.14@gmail.com"><Mail className="size-4" /> sangna3.14@gmail.com</a><a className="inline-flex items-center gap-3 border-b border-[#f5f1ff]/25 pb-2 transition hover:border-[#f5f1ff]" href="https://github.com/sangna3087" target="_blank" rel="noreferrer"><GitBranch className="size-4" /> github.com/sangna3087</a></div></div></div></section>
+      <section id="contact" className="relative z-10 border-t border-white/10 bg-[#b38cff] text-[#f5f1ff]"><div className="mx-auto max-w-6xl px-6 py-24 lg:px-8"><p className="mb-7 font-mono text-xs uppercase tracking-[0.2em] text-[#f5f1ff]/60">05 / CONTACT</p><div className="flex flex-col justify-between gap-12 md:flex-row md:items-end"><h2 className="max-w-2xl text-5xl font-semibold leading-[0.92] tracking-[-0.06em] md:text-7xl">Have a good problem?<br />Let&apos;s make it real.</h2><div className="flex flex-col gap-4 text-sm"><a className="inline-flex items-center gap-3 border-b border-[#f5f1ff]/25 pb-2 transition hover:border-[#f5f1ff]" href="mailto:sangna3.14@gmail.com"><Mail className="size-4" /> sangna3.14@gmail.com</a><a className="inline-flex items-center gap-3 border-b border-[#f5f1ff]/25 pb-2 transition hover:border-[#f5f1ff]" href="mailto:25ETCS002269@msruas.ac.in"><Mail className="size-4" /> 25ETCS002269@msruas.ac.in</a><a className="inline-flex items-center gap-3 border-b border-[#f5f1ff]/25 pb-2 transition hover:border-[#f5f1ff]" href="https://github.com/sangna3087" target="_blank" rel="noreferrer"><GitBranch className="size-4" /> github.com/sangna3087</a></div></div></div></section>
 
       <footer className="relative z-10 flex flex-col justify-between gap-3 bg-[#b38cff] px-6 pb-8 text-xs text-[#f5f1ff]/50 sm:flex-row lg:px-8"><span>© 2026 Sangna Acharya BM</span><span className="inline-flex items-center gap-2"><Globe2 className="size-3" /> Built with intent</span></footer>
     </main>
